@@ -260,8 +260,6 @@
 
   #all-time-best { font-size:10px; color:#8a7a5a55; text-align:center; margin-bottom:4px; letter-spacing:0.1em; }
 
-  .btn-row { display:flex; gap:8px; flex-wrap:wrap; justify-content:center; }
-
   @media (min-width: 768px) and (hover: hover) {
     html, body { height: auto; min-height: 100dvh; overflow: auto; }
     body { align-items: center; }
@@ -354,10 +352,7 @@
       <div class="overlay-sub">YOU HAVE ENTERED HADES</div>
       <div class="overlay-msg" id="death-msg"></div>
       <div id="leaderboard"></div>
-      <div class="btn-row">
-        <button class="btn-olympus" id="btn-share">SHARE GLORY</button>
-        <button class="btn-olympus" id="btn-restart">RISE AGAIN</button>
-      </div>
+      <button class="btn-olympus" id="btn-restart">RISE AGAIN</button>
     </div>
   </div>
   </div>
@@ -484,7 +479,6 @@ let combo=1, comboTimer=null;
 let phase="menu";
 let gameLoop=null;
 let currentLevel=0;
-let lastScore=0;
 let youRank=-1;
 
 const reducedMotion = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
@@ -891,7 +885,6 @@ function restartLoop() {
 
 // ─── LEADERBOARD ─────────────────────────────────────────────────
 function updateLeaderboard(s) {
-  lastScore = s;
   leaderboard.push(s);
   leaderboard.sort((a,b)=>b-a);
   leaderboard=leaderboard.slice(0,5);
@@ -909,20 +902,6 @@ function updateLeaderboard(s) {
       <span class="lb-score">${sc}</span>
     </div>
   `).join("");
-}
-
-function shareScore() {
-  const url = window.location.href;
-  const text = `I scored ${lastScore} in Οφίς του Ολύμπου! Play: ${url}`;
-  if (navigator.share) {
-    navigator.share({ title: "Serpent of Olympus", text }).catch(() => {});
-  } else if (navigator.clipboard && navigator.clipboard.writeText) {
-    navigator.clipboard.writeText(text)
-      .then(() => showFlash("Score copied to clipboard!"))
-      .catch(() => showFlash(text));
-  } else {
-    showFlash(text);
-  }
 }
 
 // ─── INIT / DIE ───────────────────────────────────────────────────
@@ -967,7 +946,6 @@ document.getElementById("btn-restart").addEventListener("click",startGame);
 document.getElementById("btn-resume").addEventListener("click",()=>{
   phase="playing"; hideOverlays(); restartLoop();
 });
-document.getElementById("btn-share").addEventListener("click", shareScore);
 
 // ─── KEYBOARD ────────────────────────────────────────────────────
 const KEY_DIR={
