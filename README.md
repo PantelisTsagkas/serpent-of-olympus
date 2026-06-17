@@ -2,7 +2,7 @@
 
 > *A Greek-mythology themed Snake game, playable in any browser with no dependencies.*
 
-![Game preview](https://raw.githubusercontent.com/PantelisTsagkas/serpent-of-olympus/main/preview.png)
+![Gameplay](screenshot-gameplay.png)
 
 **[▶ Play now](https://pantelistsagkas.github.io/serpent-of-olympus)**
 
@@ -33,23 +33,11 @@ Everything runs in a single `index.html` file with no build step, no framework, 
 
 ---
 
-## Screenshot
+## Screenshots
 
-<!-- Replace with an actual screenshot after first deploy -->
-```
-┌─────────────────────────────┐
-│  ΟΦΙΣ ΤΟΥ ΟΛΥΜΠΟΥ          │
-│  Score: 24   Best: 47       │
-│ ┌─────────────────────────┐ │
-│ │  🏺         🔱          │ │
-│ │      ●●●●●►             │ │
-│ │          🏛              │ │
-│ └─────────────────────────┘ │
-│  ▲  ◀  ▼  ▶                │
-└─────────────────────────────┘
-```
+**Game over** — enter Hades, check the leaderboard, and rise again.
 
-To add a real screenshot: take one after deploying, save it as `preview.png` in the repo root, and the image above will update automatically.
+![Game over](screenshot-game-over.png)
 
 ---
 
@@ -86,7 +74,7 @@ Your game will be live at `https://pantelistsagkas.github.io/serpent-of-olympus`
 
 **Step 4 — Update the links in this README**
 
-The live URL and username are already set in this file. After your first deploy, add a `preview.png` screenshot to the repo root for social sharing.
+The live URL and username are already set in this file.
 
 ---
 
@@ -119,9 +107,10 @@ python3 -m http.server 8080
 
 ```
 serpent-of-olympus/
-├── index.html    # The entire game — HTML, CSS, and JS in one file
-├── preview.png   # Screenshot for the README (add after first deploy)
-└── README.md     # This file
+├── index.html               # The entire game — HTML, CSS, and JS in one file
+├── screenshot-gameplay.png  # Gameplay screenshot for README / social sharing
+├── screenshot-game-over.png # Game over screenshot for README
+└── README.md                # This file
 ```
 
 The game is intentionally kept as a single self-contained file. If you want to extend it significantly, consider splitting it into separate `game.js` and `styles.css` files and using a bundler like Vite.
@@ -160,7 +149,6 @@ Since there's no build step, just edit `index.html` and open it in your browser 
 - [ ] Power-up: Circe's spell (slow time briefly)
 - [ ] Animated opening scene with Greek temple silhouette
 - [ ] Hard mode: portals that wrap the snake to the opposite wall
-- [ ] Share score button that generates a text snippet for social media
 - [ ] Accessibility: add `prefers-reduced-motion` support for particles
 
 ---
