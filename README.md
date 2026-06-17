@@ -1,4 +1,4 @@
-# 🐍 Οφίς του Ολύμπου — Serpent of Olympus
+# 🐍 Όφις του Ολύμπου — Serpent of Olympus
 
 > *A Greek-mythology themed Snake game, playable in any browser with no dependencies.*
 

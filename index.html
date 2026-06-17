@@ -3,17 +3,17 @@
 <head>
 <meta charset="UTF-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
-<title>Οφίς του Ολύμπου — Serpent of Olympus</title>
+<title>Όφις του Ολύμπου — Serpent of Olympus</title>
 <meta name="description" content="A Greek-mythology themed Snake game. Guide the divine serpent across the marble halls of Olympus." />
 <meta name="theme-color" content="#0d1b2a" />
 <meta name="apple-mobile-web-app-capable" content="yes" />
 <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
 <meta property="og:type" content="website" />
-<meta property="og:title" content="Οφίς του Ολύμπου — Serpent of Olympus" />
+<meta property="og:title" content="Όφις του Ολύμπου — Serpent of Olympus" />
 <meta property="og:description" content="A Greek-mythology themed Snake game. Collect relics, dodge marble columns, and ascend through the gods of Olympus." />
 <meta property="og:image" content="screenshot-gameplay.png" />
 <meta name="twitter:card" content="summary_large_image" />
-<meta name="twitter:title" content="Οφίς του Ολύμπου — Serpent of Olympus" />
+<meta name="twitter:title" content="Όφις του Ολύμπου — Serpent of Olympus" />
 <meta name="twitter:description" content="A Greek-mythology themed Snake game. Collect relics, dodge marble columns, and ascend through the gods of Olympus." />
 <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='6' fill='%230d1b2a'/%3E%3Cpath d='M6 20c4-6 10-8 16-6 2 1 4 0 6-2' stroke='%23e8c96a' stroke-width='2.5' fill='none' stroke-linecap='round'/%3E%3Ccircle cx='24' cy='10' r='2' fill='%23e8c96a'/%3E%3C/svg%3E" />
 <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -291,12 +291,12 @@
 
     <div id="scorebar">
       <div class="score-block">
-        <div class="score-label">ΑΡΙΣΤΕΙΑ · SCORE</div>
+        <div class="score-label">ΒΑΘΜΟΙ · SCORE</div>
         <div class="score-val" id="score-display" style="color:#e8c96a">0</div>
       </div>
       <div class="divider"></div>
       <div class="score-block">
-        <div class="score-label">ΥΨΙΣΤΟ · BEST</div>
+        <div class="score-label">ΡΕΚΟΡ · BEST</div>
         <div class="score-val" id="best-display" style="color:#c9a84c">0</div>
       </div>
       <div class="divider"></div>
@@ -325,7 +325,7 @@
 
     <!-- MENU -->
     <div class="overlay" id="overlay-menu">
-      <div class="overlay-title-good">⚡ ΞΕΚΙΝΑ ΤΟ ΠΑΙΧΝΙΔΙ</div>
+      <div class="overlay-title-good">⚡ ΞΕΚΙΝΑ ΤΗΝ ΟΔΥΣΣΕΙΑ</div>
       <div class="overlay-sub" style="margin-bottom:14px">GUIDE THE DIVINE SERPENT</div>
       <div id="all-time-best"></div>
       <button class="btn-olympus" id="btn-start">BEGIN YOUR ODYSSEY</button>
@@ -368,7 +368,7 @@
 
   <div id="game-footer">
     <div id="relic-guide"></div>
-    <div id="footer">ΕΝ ΑΡΧΗ ΗΝ Ο ΛΟΓΟΣ · IN THE BEGINNING WAS THE WORD</div>
+    <div id="footer">ΓΝΩΘΙ ΣΕΑΥΤΟΝ · KNOW THYSELF</div>
   </div>
 </div>
 
@@ -406,7 +406,7 @@ const LEVELS = [
 const DEATH_MSGS = [
   "Κατέπεσες στα τείχη — The walls claim you.",
   "Δάγκωσες τον εαυτό σου — The serpent devours itself.",
-  "Ήρθες σε επαφή με κολόνα — A marble column ends your journey.",
+  "Προσέκρουσες σε κίονα — A marble column ends your journey.",
 ];
 
 const LS_KEY_BEST  = "olympus_best";
