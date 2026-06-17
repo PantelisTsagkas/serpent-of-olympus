@@ -35,10 +35,6 @@ Everything runs in a single `index.html` file with no build step, no framework, 
 
 ## Screenshots
 
-**Start menu** — begin your odyssey and learn the relics of Olympus.
-
-![Start menu](screenshot-start-menu.png)
-
 **Gameplay** — guide the serpent across the marble arena and collect relics.
 
 ![Gameplay](screenshot-gameplay.png)
