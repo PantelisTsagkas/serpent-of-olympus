@@ -2,7 +2,7 @@
 
 > *A Greek-mythology themed Snake game, playable in any browser with no dependencies.*
 
-![Gameplay](screenshot-gameplay.png)
+![Start menu](screenshot-start-menu.png)
 
 **[▶ Play now](https://pantelistsagkas.github.io/serpent-of-olympus)**
 
@@ -34,6 +34,14 @@ Everything runs in a single `index.html` file with no build step, no framework, 
 ---
 
 ## Screenshots
+
+**Start menu** — begin your odyssey and learn the relics of Olympus.
+
+![Start menu](screenshot-start-menu.png)
+
+**Gameplay** — guide the serpent across the marble arena and collect relics.
+
+![Gameplay](screenshot-gameplay.png)
 
 **Game over** — enter Hades, check the leaderboard, and rise again.
 
@@ -107,10 +115,11 @@ python3 -m http.server 8080
 
 ```
 serpent-of-olympus/
-├── index.html               # The entire game — HTML, CSS, and JS in one file
-├── screenshot-gameplay.png  # Gameplay screenshot for README / social sharing
-├── screenshot-game-over.png # Game over screenshot for README
-└── README.md                # This file
+├── index.html                # The entire game — HTML, CSS, and JS in one file
+├── screenshot-start-menu.png # Start menu screenshot for README
+├── screenshot-gameplay.png   # Gameplay screenshot for README / social sharing
+├── screenshot-game-over.png  # Game over screenshot for README
+└── README.md                 # This file
 ```
 
 The game is intentionally kept as a single self-contained file. If you want to extend it significantly, consider splitting it into separate `game.js` and `styles.css` files and using a bundler like Vite.
